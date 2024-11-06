@@ -1,0 +1,19 @@
+{
+  "name": "first-jenkins-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test",
+    "test:specific": "npx playwright test --grep sep-login.spec.js",
+    "test:tag": "npx playwright test --grep @sep",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.7"
+  }
+}
